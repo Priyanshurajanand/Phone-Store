@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "proxy": "https://phone-store-8k20.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

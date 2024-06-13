@@ -4,6 +4,7 @@ import { useCart } from "../context/cart";
 import { useParams, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import axios from "axios";
+import { apiUrl } from "../config/api";
 const CategoryProduct = () => {
   const params = useParams();
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const CategoryProduct = () => {
   const getPrductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `/api/v1/product/product-category/${params.slug}`
+        `${apiUrl}/api/v1/product/product-category/${params.slug}`
       );
       setProducts(data?.products);
       setCategory(data?.category);
