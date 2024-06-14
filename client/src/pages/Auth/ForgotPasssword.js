@@ -34,7 +34,7 @@ const ForgotPasssword = () => {
     }
   };
   return (
-    <Layout title={"Forgot Password - Ecommerce App"}>
+    <Layout title={"Forgot Password - Phone Store"}>
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <form
         onSubmit={handleSubmit}
